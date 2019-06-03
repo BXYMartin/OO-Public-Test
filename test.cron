@@ -1,0 +1,1 @@
+0 */1 * * * bash /home/pi/Documents/WSP/start.sh 1 2 >> ~/Documents/WSP/result.txt
