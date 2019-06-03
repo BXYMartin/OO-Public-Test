@@ -1,7 +1,7 @@
 @author BXYMartin@buaa.edu.cn
 @2019-04-16
 
-# Elevator Testing Service ETS™️  v2.0.1
+# UML Testing Service UTS™️  v4.1.2
 ## Prerequisites
 ### - Linux/MacOS Bash Environment
 ### - Java Runtime Environment 11.0.2
@@ -15,13 +15,12 @@ cd ${Directory}
 ```
 Setup Running Variables:
 ```bash
-./start.sh Test_Rounds Max_Requests Max_Interval Java_Main_Path Java_Package_Name
+./start.sh x x
 ```
 Run Tests:
 ```bash
 ./start.sh
 ```
-This Program will automatically cache all parameters.
 
 ## Bug Report
 Please Contact BXYMartin@buaa.edu.cn
