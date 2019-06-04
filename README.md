@@ -41,7 +41,9 @@ cd ..
 nano start.sh # Change First Line to Your Path
 ```
 
-Now you're ready to go.
+> Now you're ready to go.
+
+You may consult [OO-Public Readme](https://github.com/BXYMartin/OO-Public) to put your jar into the test system.
 
 ## Starting UML Autotest
 ### Manually Run
