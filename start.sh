@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/Documents/BUAA/WSP/
+cd ~/Documents/BUAA/OO-Public-Test/
 rm result.txt
 if [ ! -f "running" ]; then
 	touch "running"
