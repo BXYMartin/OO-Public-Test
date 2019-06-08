@@ -33,6 +33,16 @@ for error in errors:
     fault.append(tag)
     tags = tags + "\n"
 
+diss=""
+
+for file_name in os.listdir("./test_jar"):
+    pre, ext = os.path.splitext(file_name)
+    diss += '''
+<li>
+    <button class="icobutton"><span class="fa fa-thumbs-o-down"> {:s}</span><div class="count"><div class="number">Loading...</div></div></button>
+</li>
+'''.format(pre)
+
 l = last.split(".")
 mdj = l[0]
 model = "Default"
@@ -62,6 +72,13 @@ tags:
 <div>Corresponding File: <label id="file">{:s}.markdown</label><br>Click Me To Resolve: <button class="btn" id="delete" onclick="del()"></button></div>
 > Important Note: When you click this button, this report will be deleted on next commit, please make sure no one else could be affected by this bug.
 
+## Not My Fault, Diss Others!
+<div class="container">
+    <section class="content">
+{:s}
+    </section>
+</div>
+
 ## Details
 
 Error on line **{:s}**
@@ -89,5 +106,5 @@ Test Case:
 ```
 
 
-""".format(model, mdj, num, time, tags, time, name, second, first, mdj, third, out)
+""".format(model, mdj, num, time, tags, time, name, diss, second, first, mdj, third, out)
     log.writelines(content)
