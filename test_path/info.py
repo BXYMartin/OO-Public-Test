@@ -1,6 +1,6 @@
 from sys import argv
 import time
-import re
+import re, os
 script, first, second, third, last, out = argv
 
 with open(first, "r") as info:
